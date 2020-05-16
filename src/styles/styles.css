@@ -41,8 +41,16 @@ body {
     margin-top: 20px;
 }
 
+.fighter-name {
+    font-weight: bold;
+}
+
 .fighter-image {
     height: 260px;
+}
+
+.fighter-info {
+    padding: 0 1.5rem 1.5rem;
 }
 
 #loading-overlay {
@@ -94,6 +102,11 @@ body {
 
 .modal-body {
     padding: 1rem;
+    display: flex;
+}
+
+.modal-body .fighter-image {
+    padding-left: 1rem;
 }
 
 .close-btn {
