@@ -25,7 +25,7 @@ export function getDamage(attacker, enemy) {
   const hitPower = getHitPower(attacker);
   const blockPower = getBlockPower(enemy);
   const damage = hitPower - blockPower;
-  return damage;
+  return (damage < 0) ? 0 : damage;
 }
 
 export function getHitPower(fighter) {
